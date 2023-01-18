@@ -62,12 +62,6 @@ $ yarn ios
 $ expo start
 ```
 
-## :memo: License
-
-Este projeto está sob a licença MIT. Caso gostaria de ler, por favor acessar a licença aqui neste link [LICENSE](https://github.com/SilvaneiMartins/wallet-app/blob/master/LICENSE) para maiores informações.
-
----
-
 ## 🛠 Tecnologias usada no projeto;
 
 Aqui tem link de algumas das tecnologias utilizada no projeto.
