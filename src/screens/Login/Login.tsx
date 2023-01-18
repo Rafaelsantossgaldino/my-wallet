@@ -2,7 +2,9 @@ import React from "react";
 import { Text } from "react-native";
 import { SafeAreaView } from "react-native";
 
+import { ButtonSocialGoogle } from "../../components/ButtonSocialGoogle/ButtonSocialGoogle";
 import { Container, ContentHeader, Title, Description, ViewButton,  ContentBody, ContentFooter} from "./styles";
+
 
 const Login: React.FC = () => {
   return (
@@ -13,7 +15,10 @@ const Login: React.FC = () => {
 
           <Description>Entrar com rede sociais</Description>
 
-          <ViewButton></ViewButton>
+          <ViewButton>
+            <ButtonSocialGoogle title="Google" />
+            <ButtonSocialGoogle title="Google" />
+          </ViewButton>
         </ContentHeader>
 
         <ContentBody>
