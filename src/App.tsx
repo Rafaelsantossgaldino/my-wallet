@@ -3,6 +3,7 @@ import { View, ActivityIndicator, Text } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { ThemeProvider } from "styled-components/native";
 import COLORS from "../src/styles/theme";
+import { Login } from "./screens/Login/Login";
 
 import {
   useFonts,
@@ -34,14 +35,8 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={COLORS}>
       <StatusBar style="dark" translucent backgroundColor="transparent" />
-      <View
-        style={{
-          flex:1,
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Text>My Wallett</Text>
+      <View>
+        <Login />
       </View>
     </ThemeProvider>
   );
