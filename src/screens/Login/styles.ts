@@ -11,7 +11,9 @@ export const ContentHeader = styled.View`
   padding: ${RFValue(20)}px;
 `;
 
-export const ViewButton = styled.View``;
+export const ViewButton = styled.View`
+  flex-direction: row;
+`;
 
 export const ContentBody = styled.View``;
 
@@ -20,13 +22,14 @@ export const ContentFooter = styled.View``;
 export const Title = styled.Text`
   text-align: center;
   margin-top: ${RFValue(60)}px;
-  font-size: ${RFValue(40)}px;
+  font-size: ${RFValue(30)}px;
   font-family: ${({ theme }) => theme.FONTS.POPPINSMEDIUM};
 `;
 
 export const Description = styled.Text`
-  font-size: ${RFValue(15)}px;
-  font-family: ${({ theme }) => theme.FONTS.POPPINSLIGHT};
   margin-top: ${RFValue(60)}px;
+  font-size: ${RFValue(15)}px;
+  margin-bottom: ${RFValue(10)}px;
+  font-family: ${({ theme }) => theme.FONTS.POPPINSLIGHT};
 `;
 
