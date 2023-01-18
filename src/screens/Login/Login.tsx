@@ -11,7 +11,7 @@ const Login: React.FC = () => {
     <SafeAreaView>
       <Container>
         <ContentHeader>
-          <Title>Seja Bem vindo(a) {"\n"} ao RS WalleApp</Title>
+          <Title>Seja Bem vindo(a) {"\n"} ao RS Wallet App</Title>
 
           <Description>Entrar com rede sociais</Description>
 
