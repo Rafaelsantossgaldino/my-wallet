@@ -1,6 +1,6 @@
 import React from "react";
 import { View, ActivityIndicator, Text } from "react-native";
-import { StatusBar } from "react-native";
+import { StatusBar } from "expo-status-bar";
 import { ThemeProvider } from "styled-components/native";
 import COLORS from "../src/styles/theme";
 
@@ -33,7 +33,7 @@ const App: React.FC = () => {
 
   return (
     <ThemeProvider theme={COLORS}>
-      
+      <StatusBar style="dark" translucent backgroundColor="transparent" />
       <View
         style={{
           flex:1,
