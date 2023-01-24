@@ -1,7 +1,7 @@
 import React from "react";
-import { Text } from "react-native";
-import { SafeAreaView } from "react-native";
+import { SafeAreaView, Text } from "react-native";
 
+import { Input } from "../../components/Input/Input";
 import { ButtonSocialGoogle } from "../../components/ButtonSocialGoogle/ButtonSocialGoogle";
 import { ButtonSocial } from "../../components/ButtonSocial/ButtonSocial";
 import { Container, ContentHeader, Title, Description, ViewButton,  ContentBody, ContentFooter} from "./styles";
@@ -23,7 +23,8 @@ const Login: React.FC = () => {
         </ContentHeader>
 
         <ContentBody>
-
+          <Input LeftIcon />
+          <Input RightIcon />
         </ContentBody>
 
         <ContentFooter>
