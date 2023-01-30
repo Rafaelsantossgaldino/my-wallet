@@ -1,7 +1,8 @@
 import React from "react";
-import { SafeAreaView, Text } from "react-native";
+import { KeyboardAvoidingView, Text } from "react-native";
 
 import { Input } from "../../components/Input/Input";
+import { ButtonPersonalizado } from "../../components/Button/ButtonPersonalizado";
 import { useTheme } from "styled-components";
 import { ButtonSocialGoogle } from "../../components/ButtonSocialGoogle/ButtonSocialGoogle";
 import { ButtonSocial } from "../../components/ButtonSocial/ButtonSocial";
@@ -12,7 +13,7 @@ const Login: React.FC = () => {
   const { COLORS } = useTheme();
 
   return (
-    <SafeAreaView>
+    <KeyboardAvoidingView>
       <Container>
         <ContentHeader>
           <Title>Seja Bem vindo(a) {"\n"} ao RS Wallet App</Title>
@@ -39,13 +40,18 @@ const Login: React.FC = () => {
             iconName="lock-closed-outline"
             placeholder="Digite sua senha"
           />
+
+          <ButtonPersonalizado
+            title="Entrar"
+            variant="primary"
+            onPress={() => {}}
+            style={{ marginBottom: 20 }}
+          />
         </ContentBody>
 
-        <ContentFooter>
-
-        </ContentFooter>
+        <ContentFooter></ContentFooter>
       </Container>
-    </SafeAreaView>
+    </KeyboardAvoidingView>
   );
 };
 export { Login };
