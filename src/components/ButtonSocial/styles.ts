@@ -9,10 +9,10 @@ export const Button = styled(RectButton)`
   flex-direction: row;
   margin-bottom: 16px;
   justify-content: center;
-  border-radius: ${RFValue(5)}px;
-  width: ${RFValue(130)}px;
-  height: ${RFValue(60)}px;
+  width: ${RFValue(145)}px;
+  height: ${RFValue(50)}px;
   margin-left: ${RFValue(10)}px;
+  border-radius: ${RFValue(5)}px;
   box-shadow: 1px 3px 3px rgba(0,0,0,0.2);
   background-color: ${({ theme }) => theme.COLORS.BLUE};
 `;
