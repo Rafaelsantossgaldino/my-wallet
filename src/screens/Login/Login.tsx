@@ -30,6 +30,7 @@ const Login: React.FC = () => {
           <Input
             LeftIcon
             iconSize={25}
+            secureTextEntry={false}
             iconName="mail-outline"
             placeholder="Digite seu email"
 
@@ -38,6 +39,7 @@ const Login: React.FC = () => {
             LeftIcon
             RightIcon
             iconSize={25}
+            secureTextEntry
             iconName="lock-closed-outline"
             placeholder="Digite sua senha"
           />
