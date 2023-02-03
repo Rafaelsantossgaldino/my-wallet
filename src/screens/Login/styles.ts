@@ -1,6 +1,7 @@
 import styled from "styled-components/native";
 import { RFValue } from "react-native-responsive-fontsize";
 import { Pressable } from "react-native";
+import theme from "../../styles/theme";
 
 export const Container = styled.View`
   padding: ${RFValue(20)}px;
@@ -58,4 +59,24 @@ export const TitleButtonSingUp2 = styled.Text`
   margin-left: 10px;
   color: ${({ theme }) => theme.COLORS.BLUE};
   font-family: ${({ theme }) => theme.FONTS.POPPINSBOLD};
+`;
+
+export const ContentForgotPassword = styled.View`
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  align-items: flex-end;
+  justify-content: flex-end;
+`;
+
+export const ContentButtonForgotPassword = styled.TouchableOpacity`
+  align-items: center;
+  justify-content: flex-end;
+`;
+
+export const ContentTitleForgotPassword = styled.Text`
+  align-items: flex-end;
+  font-size: 17px;
+  color: ${({ theme }) => theme.COLORS.GRAY3};
+  font-family: ${({ theme }) => theme.FONTS.POPPINSREGULAR};
 `;
