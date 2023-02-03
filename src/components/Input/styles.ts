@@ -3,7 +3,7 @@ import { RFValue } from "react-native-responsive-fontsize";
 
 export const Container = styled.View`
   width: 100%;
-  height: ${RFValue(50)}px;
+  height: ${RFValue(60)}px;
   padding: 0 12px;
   border-radius: ${RFValue(8)}px;
   margin-top: ${RFValue(10)}px;
@@ -16,7 +16,7 @@ export const Container = styled.View`
 export const InputContainer = styled.TextInput`
   border: 0;
   flex: 1;
-  height: ${RFValue(45)}px;
+  height: ${RFValue(50)}px;
   border-radius: ${RFValue(8)}px;
   font-size: ${RFValue(14)}px;
   font-family: ${({ theme }) => theme.FONTS.POPPINSLIGHT};
