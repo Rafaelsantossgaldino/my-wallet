@@ -6,7 +6,18 @@ import { ButtonPersonalizado } from "../../components/Button/ButtonPersonalizado
 import { useTheme } from "styled-components";
 import { ButtonSocialGoogle } from "../../components/ButtonSocialGoogle/ButtonSocialGoogle";
 import { ButtonSocial } from "../../components/ButtonSocial/ButtonSocial";
-import { Container, ContentHeader, Title, Description, ViewButton,  ContentBody, ContentFooter} from "./styles";
+import {
+  Container,
+  ContentHeader,
+  Title,
+  Description,
+  ViewButton,
+  ContentBody,
+  ContentFooter,
+  ButtonSignUp,
+  TitleButtonSignUp1,
+  TitleButtonSingUp2
+} from "./styles";
 
 
 const Login: React.FC = () => {
@@ -58,7 +69,12 @@ const Login: React.FC = () => {
           />
         </ContentBody>
 
-        <ContentFooter></ContentFooter>
+        <ContentFooter>
+          <ButtonSignUp >
+             <TitleButtonSignUp1>Não tem cadastro ainda?</TitleButtonSignUp1>
+             <TitleButtonSingUp2>Cadastre-se</TitleButtonSingUp2>
+          </ButtonSignUp>
+        </ContentFooter>
       </Container>
     </KeyboardAvoidingView>
   );
