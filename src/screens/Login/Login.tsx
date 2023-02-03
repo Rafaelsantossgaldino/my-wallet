@@ -16,7 +16,10 @@ import {
   ContentFooter,
   ButtonSignUp,
   TitleButtonSignUp1,
-  TitleButtonSingUp2
+  TitleButtonSingUp2,
+  ContentForgotPassword,
+  ContentButtonForgotPassword,
+  ContentTitleForgotPassword
 } from "./styles";
 
 
@@ -24,7 +27,10 @@ const Login: React.FC = () => {
   const { COLORS } = useTheme();
 
   return (
-    <KeyboardAvoidingView>
+    <KeyboardAvoidingView
+      behavior="position"
+      enabled
+      >
       <Container>
         <ContentHeader>
           <Title>Seja Bem vindo(a) {"\n"} ao RS Wallet App</Title>
@@ -61,6 +67,13 @@ const Login: React.FC = () => {
             placeholder="Digite sua senha"
           />
 
+          <ContentForgotPassword>
+            <ContentButtonForgotPassword onPress={() => {}}>
+
+              <ContentTitleForgotPassword>Recuperar Senha</ContentTitleForgotPassword>
+            </ContentButtonForgotPassword>
+          </ContentForgotPassword>
+
           <ButtonPersonalizado
             title="Entrar"
             variant="primary"
@@ -70,7 +83,7 @@ const Login: React.FC = () => {
         </ContentBody>
 
         <ContentFooter>
-          <ButtonSignUp >
+          <ButtonSignUp onPress={() => {}}>
              <TitleButtonSignUp1>Não tem cadastro ainda?</TitleButtonSignUp1>
              <TitleButtonSingUp2>Cadastre-se</TitleButtonSingUp2>
           </ButtonSignUp>
